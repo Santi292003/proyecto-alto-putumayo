@@ -13,7 +13,7 @@ export const brand = {
       "Portal cultural y turístico del Alto Putumayo, Colombia. Divulga la historia, tradiciones y paisajes del Valle de Sibundoy, hogar ancestral de los pueblos Kamëntsá e Inga.",
     descriptionEN:
       "Cultural and tourism portal for the Alto Putumayo region, Colombia. Showcases the history, traditions, and landscapes of the Valle de Sibundoy, ancestral home of the Kamëntsá and Inga peoples.",
-    url: "https://alto-putumayo.vercel.app",
+    url: "https://proyecto-alto-putumayo.vercel.app",
     locale: "es-CO",
   },
 
