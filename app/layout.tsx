@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { brand } from '@/lib/brand'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -17,12 +18,52 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(brand.site.url),
+
   title: {
-    template: '%s | Alto Putumayo',
-    default: 'Alto Putumayo — Cultura Viva',
+    default: brand.site.name,
+    template: `%s | ${brand.site.name}`,
   },
-  description:
-    'Descubre la riqueza cultural de los pueblos Kamentsá e Inga del Alto Putumayo colombiano.',
+
+  description: brand.site.description,
+
+  keywords: [
+    'Alto Putumayo',
+    'Kamëntsá',
+    'Inga',
+    'Valle de Sibundoy',
+    'Bëtscnaté',
+    'Putumayo Colombia',
+    'turismo Putumayo',
+    'cultura indígena Colombia',
+  ],
+
+  authors: [{ name: brand.site.name }],
+  creator: brand.site.name,
+
+  openGraph: {
+    type:        'website',
+    url:         brand.site.url,
+    locale:      'es_CO',
+    siteName:    brand.site.name,
+    title:       brand.site.name,
+    description: brand.site.description,
+    images: [
+      {
+        url:    '/images/og-image.jpg',
+        width:  1200,
+        height: 630,
+        alt:    `${brand.names.valle} — ${brand.names.region}`,
+      },
+    ],
+  },
+
+  twitter: {
+    card:        'summary_large_image',
+    title:       brand.site.name,
+    description: brand.site.description,
+    images:      ['/images/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({

@@ -2,7 +2,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { brand } from '@/lib/brand'
 
-export const metadata: Metadata = { title: 'Cultura' }
+export const metadata: Metadata = {
+  title: 'Cultura',
+  description: `Ceremonias, lenguas, tejidos y saberes del ${brand.names.region}: el ${brand.names.betscnate}, las lenguas camëntsá e inga, y la medicina ancestral.`,
+}
 
 const SUB_PAGES = [
   {

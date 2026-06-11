@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 import { brand } from '@/lib/brand'
 
-export const metadata: Metadata = { title: 'Turismo' }
+export const metadata: Metadata = {
+  title: 'Turismo',
+  description: `Rutas de naturaleza y cultura en el ${brand.names.region}: senderismo, ecoturismo y experiencias auténticas con los pueblos ${brand.names.kamentsá} e ${brand.names.inga}.`,
+}
 
 const ROUTES = [
   {

@@ -2,7 +2,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { brand } from '@/lib/brand'
 
-export const metadata: Metadata = { title: 'Historia' }
+export const metadata: Metadata = {
+  title: 'Historia',
+  description: `Origen de los pueblos ${brand.names.kamentsá} e ${brand.names.inga} en el ${brand.names.valle}: historia prehispánica, lenguas y resistencia cultural hasta hoy.`,
+}
 
 const SUB_PAGES = [
   {
