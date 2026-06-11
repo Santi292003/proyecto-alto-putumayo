@@ -58,6 +58,10 @@ export const metadata: Metadata = {
     ],
   },
 
+  verification: {
+    google: 'XWSb9C08jWy-GjOl7anfP2TtGrDAODseq4qDLpzxRJ8',
+  },
+
   twitter: {
     card:        'summary_large_image',
     title:       brand.site.name,
